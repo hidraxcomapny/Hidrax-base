@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <!--Creado por Diego Arce Larios-->
+    <head>
+        <link rel = "stylesheet" href="style.css">
+        <title>Hidrax/base</title>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyD6JtmiUkcxak-6cBQCXEiC0YoCTB3ksak",
+                authDomain: "hidrax-a4c35.firebaseapp.com",
+                databaseURL: "https://hidrax-a4c35-default-rtdb.firebaseio.com",
+                projectId: "hidrax-a4c35",
+                storageBucket: "hidrax-a4c35.appspot.com",
+                messagingSenderId: "88771266732",
+                appId: "1:88771266732:web:a49a91e359778b9bf67709"
+            };
+            // Inicia Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+    </head>
+    <body id = "principal_box" style="display: flex; background-color: black; flex-direction: column; margin: 4%;"> 
+        <div id = "head" style="visibility: visible;">
+            <img src="./assets/hidrax_logo.png" style="display: flex; height: 100px;">
+            <h1 style="display: flex; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;">
+                Acceso a la base de datos
+            </h1>
+            <img id = "imagen_animada" src="./assets/mono_aguacate.png" style="display: flex; height: 80px; 
+            background-color: black; padding: 10px; border: white solid 2px; border-radius: 30px;">
+        </div>
+
+        <div id = "mega_box" style="display: flex; flex-direction: column; align-items: center;">
+            <div id = "head_password" style="visibility: visible;">
+                    <h1 style="margin: 5%;">Contraseña:</h1>
+                </div>
+            <div id = "body_password" style="visibility: visible;">
+            <div style="display: flex; justify-content: center; margin-top: 10%; flex-direction: row; align-items: center;">
+                <input id = "special_input" type = "password" maxlength="6">
+                <button id = "hider_button" class="buttons" style="width: 30px; height: 30px; border-radius: 5px; margin-left: 1%; 
+                border-color: white; background-color: white;">
+                    <img id = "img" src="./assets/candado_c.png" style="width: 20px;">
+                </button>
+            </div>
+            <div style="display: flex; justify-content: flex-end;">
+                <button id = "submit_password" class="buttons" style="width: 100px; height: 30px; 
+                background-color: rgb(12, 83, 14); margin-right: 3%; margin-top: 10%">
+                        <p>Enviar</p>
+                </button>
+            </div>
+                
+            </div>
+        </div>
+
+        
+
+        <script src="./incio.js"></script>
+    </body>
+</html>
